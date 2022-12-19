@@ -1,4 +1,4 @@
-// Component Banner
+// Component de la bannière de la page d'accueil
 
 function Banner({image}) {
     return(

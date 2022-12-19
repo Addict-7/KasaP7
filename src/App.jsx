@@ -2,9 +2,9 @@ import React from 'react';
 import reportWebVitals from './reportWebVitals';
 import {Route, Routes, BrowserRouter} from "react-router-dom"
 import Home from './pages/Home';
-//import About from './pages/About';
-//import Error from "./pages/Error"
-//import Annonce from './pages/Annonce';
+import About from './pages/About';
+import Error from "./pages/Error"
+import Annonce from './pages/Annonce';
 
 
 
@@ -17,7 +17,10 @@ function App() {
       <div className="App">
         <BrowserRouter>
           <Routes>
-            <Route exact path='/' element={<Home />} />
+            <Route path='/' element={<Home />} />
+            <Route path="/About" element={<About />} />
+            <Route path="/Annonce/:id" element={<Annonce />} />
+            <Route path="*" element={<Error />} />
           </Routes>
         </BrowserRouter>
       </div>
@@ -27,9 +30,7 @@ function App() {
 
 export default App;
 
-/** <Route path="/about" element={<About />} />
-<Route path="/Annonce/:id" element={<Annonce />} />
-<Route path="*" element={<Error />} />**/
+/** **/
 
 
 /**const root = ReactDOM.createRoot(document.getElementById('root'));

@@ -1,7 +1,8 @@
+
+// Importation de NavLink
 import {NavLink} from "react-router-dom"
-
+ 
 // Component pour le header comprenant le logo et la navigation (Accueil / A propos)
-
 function Header({logo}) {
     return (
         <div className='header'>

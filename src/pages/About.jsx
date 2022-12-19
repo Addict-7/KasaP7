@@ -10,29 +10,27 @@ import Footer from '../components/Footer';
 import logoHeader from '../assets/logo.svg';
 import imageBanner from '../assets/banner.png';
 import logoFooter from '../assets/logofooter.svg';
-import about from "../Data/about.json"
+import about from "../datas/about.json"
+import Collapse from '../components/Collapse';
 
 
 function About() {
     return (
         <div>
-            <header>
-                <Header logo={logoHeader}/>
-            </header>
-            <banner>
-                <Banner image={imageBanner}/>
-            </banner>
-            <section className='main-about-cont'>
-                {about.map((data, index) => (
-                    <DropDown key={index} 
-                    buttonClosed={closedButton} 
-                    buttonOpen={openButton} 
-                    title={data.title} 
-                    description={data.description} />
-                ))
-                }
-            </section>
-            <Footer logo={logoFooter}/>
+            <div className="about-container">
+                <header>
+                    <Header logo={logoHeader}/>
+                </header>
+                <section>
+                    <Banner image={imageBanner}/>
+                </section>
+                <section className="about-main-content">
+                    {about.map(({name, content}) => (
+                        <Collapse key={content} name={name} content={[content]} />
+                    ))}
+                </section>
+                <Footer logo={logoFooter}/>
+            </div>
         </div>
     )
 };
