@@ -1,7 +1,9 @@
-
 // Importation de NavLink
 import {NavLink} from "react-router-dom"
  
+// Importation du CSS
+import '../styles/header.css';
+
 // Component pour le header comprenant le logo et la navigation (Accueil / A propos)
 function Header({logo}) {
     return (
