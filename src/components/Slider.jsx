@@ -3,7 +3,7 @@ import { useState } from "react";
 import arrowLeft from '../assets/arrowLeft.svg';
 import arrowRight from '../assets/arrowRight.svg';
 
-const Slider = ({pictures}) => {
+function Slider({pictures}) {
 
     const [activeIndex, setActiveIndex] = useState(0);
 

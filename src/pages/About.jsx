@@ -6,13 +6,14 @@ import Header from '../components/Header';
 import Banner from '../components/Banner';
 import Footer from '../components/Footer';
 
-// Importation des images et données
+// Importation des images
 import logoHeader from '../assets/logo.svg';
-import imageBanner from '../assets/banner.png';
+import imageBanner from '../assets/aboutbanner.png';
 import logoFooter from '../assets/logofooter.svg';
-import about from "../datas/about.json"
 import Collapse from '../components/Collapse';
 
+// Importation des données
+import about from "../datas/about.json"
 
 function About() {
     return (
