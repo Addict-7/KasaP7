@@ -22,12 +22,12 @@ function Annonce() {
     <div>
 
       <Header />
-      <Slider pictures={annonce.picture} />
+      <Slider pictures={picture} />
 
       <section className="annonce">
         <div className="annonce-content">annonce.
-          <h1 className="annonce-title">{annonce.title}</h1>
-          <h2 className="annonce-location">{annonce.location}</h2>
+          <h1 className="annonce-title">{title}</h1>
+          <h2 className="annonce-location">{location}</h2>
           <div className="annonce-tags">
             {tags.map((tag) => (
             <Tags name={tag} key={tag} />
@@ -42,14 +42,14 @@ function Annonce() {
               </div>
 
               <div className="host-rating">
-                  <Ratings rate={host.rating} />
+                  <Ratings rate={rating} />
               </div>
           </div>
       </section>
 
       <section className="annonce-collapse">
-        <Collapse type="equipement" name="Description" content={annonce.description} />
-        <Collapse type="equipement" name="Equipements" content={annonce.equipments} />
+        <Collapse type="equipement" name="Description" content={description} />
+        <Collapse type="equipement" name="Equipements" content={equipments} />
       </section>
 
       <Footer />
