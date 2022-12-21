@@ -1,4 +1,32 @@
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.header-logo {
+
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-nav :nth-child(1) {
+    margin-right: 25px;
+}
+
+.header-nav, .header-nav-active {
+    text-decoration: none;
+}
+
+.header-nav a {
+
+}
+
+ul {
+    list-style-type: none;
 }

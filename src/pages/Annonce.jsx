@@ -9,28 +9,34 @@ import Ratings from '../components/Ratings';
 import Collapse from "../components/Collapse";
 import Footer from '../components/Footer';
 
+import logoHeader from '../assets/logo.svg';
+import logoFooter from '../assets/logofooter.png';
+
 // Importation des données
-import data from '../datas/annonces.json';
+import annonces from '../datas/annonces.json';
 
 function Annonce() {
   
-  const { productId } = useParams();
-  const annonce = data.find((annonce) => annonce.id === productId);
-  const { title, location, tags, host, rating, equipments, description, picture } = annonce;
+  const { annonceId } = useParams();
+
+  const annonce = annonces.find((annonce) => annonce.id === annonceId);
+
+  console.log(annonce)
+
+  const { title, location, host, tags, description, equipments, rating, pictures } = annonce;
+
+  console.log(pictures)
 
   return (
     <div>
-
-      <Header />
+      <Header logo={logoHeader} />
       <section className="annonce">
-        <Slider pictures={picture} />
+        <Slider pictures={pictures} />
           <div className="annonce-content">
             <h1 className="annonce-title">{title}</h1>
             <h2 className="annonce-location">{location}</h2>
             <div className="annonce-tags">
-              {tags.map((tag) => (
-              <Tags name={tag} key={tag} />
-              ))}
+              <Tags tags={tags} />
             </div>
           </div>
 
@@ -50,9 +56,13 @@ function Annonce() {
         <Collapse type="equipement" name="Equipements" content={equipments} />
       </section>
 
-      <Footer />
+      <Footer logo={logoFooter}/>
     </div>
-  )
+)
 }
-
-export default Annonce;
+  
+  export default Annonce;
+  
+  /**{annonce.tags.map((tag) => (
+              <Tags name={tag} key={tag} />
+              ))}**/

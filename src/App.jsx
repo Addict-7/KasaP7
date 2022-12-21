@@ -18,7 +18,7 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path='/' element={<Home />} />
-            <Route path="/annonce/:id" element={<Annonce />} />
+            <Route path="/annonces/:annonceId" element={<Annonce />} />
             <Route path="/About" element={<About />} />
             <Route path="*" element={<Error />} />
           </Routes>
@@ -30,20 +30,6 @@ function App() {
 
 export default App;
 
-/**const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <BrowserRouter>
-    <Routes>
-      <Route path='/' element={<Home/>}/>
-      <Route path='/about' element={<About/>}/>
-      <Route path='/annonces/:annonceId' element={<Annonce/>} />
-      <Route path='/404' element={<Error/>}/>
-      <Route path='*' element={<Error/>}/>
-    </Routes>
-    </BrowserRouter>
-  </React.StrictMode>
-);**/
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

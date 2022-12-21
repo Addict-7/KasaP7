@@ -1,5 +1,7 @@
-// Component de la bannière de la page d'accueil
+// Importation du CSS
+import '../styles/banner.css';
 
+// Component de la bannière de la page d'accueil
 function Banner({image}) {
     return(
         <div className="banner-cont">

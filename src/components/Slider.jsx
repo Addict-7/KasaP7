@@ -18,10 +18,10 @@ function Slider({pictures}) {
     return (
         <div>
             <div className="slider">
-                <icon icon={arrowLeft} className={`left_slider_arrow`} onClick={leftSlide} />
-                <img src={pictures[activeIndex]} alt="Logement" className="slider_img" />
-                <icon icon={arrowRight} className={`right_slider_arrow`} onClick={rightSlide} />
-                <p className="slider_index">{activeIndex + 1}/{pictures.length}</p>
+                <img src={arrowLeft} className={`left-slider-arrow`} onClick={leftSlide} alt=""/>
+                <img src={pictures[activeIndex]} alt="Logement" className="slider-img" />
+                <img src={arrowRight} className={`right-slider-arrow`} onClick={rightSlide} alt=""/>
+                <p className="slider-index">{activeIndex + 1}/{pictures.length}</p>
             </div>
         </div>
     );
