@@ -1,6 +1,6 @@
 // Importation du ' hook ' useParams pour récupérer l'id du logement selectionné
-import { useParams } from "react-router-dom";
-//import { useEffect } from 'react';
+import { redirect, useParams } from "react-router-dom";
+
 
 import Header from '../components/Header';
 import Slider from '../components/Slider';
@@ -21,11 +21,7 @@ function Annonce() {
 
   const annonce = annonces.find((annonce) => annonce.id === annonceId);
 
-  console.log(annonce)
-
   const { title, location, host, tags, description, equipments, rating, pictures } = annonce;
-
-  console.log(pictures)
 
   return (
     <div>
@@ -58,11 +54,7 @@ function Annonce() {
 
       <Footer logo={logoFooter}/>
     </div>
-)
+  )
 }
   
   export default Annonce;
-  
-  /**{annonce.tags.map((tag) => (
-              <Tags name={tag} key={tag} />
-              ))}**/

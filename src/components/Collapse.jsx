@@ -1,5 +1,10 @@
+// Importation du hook useState
 import { useState } from "react";
 
+// Importation du CSS
+import '../styles/collapse.css';
+
+// Importation des images
 import arrowdown from "../assets/arrowdown.png";
 
 function Collapse({ content, title }) {

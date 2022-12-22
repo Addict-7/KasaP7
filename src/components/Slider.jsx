@@ -1,5 +1,10 @@
+// Importation du hook useState
 import { useState } from "react";
 
+// Importation du CSS
+import '../styles/slider.css';
+
+// Importation des images
 import arrowLeft from '../assets/arrowLeft.svg';
 import arrowRight from '../assets/arrowRight.svg';
 

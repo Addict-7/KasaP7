@@ -1,3 +1,7 @@
+// Importation du CSS
+import '../styles/ratings.css';
+
+// Importation des images
 import star from "../assets/redStar.svg"
 import greystar from "../assets/greyStar.svg"
 
