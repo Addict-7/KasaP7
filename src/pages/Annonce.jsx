@@ -9,7 +9,7 @@ import Ratings from '../components/Ratings';
 import Collapse from "../components/Collapse";
 import Footer from '../components/Footer';
 
-import logoHeader from '../assets/logo.svg';
+import logoHeader from '../assets/logo.png';
 import logoFooter from '../assets/logofooter.png';
 
 // Importation des données
