@@ -1,5 +1,5 @@
 // Importation du CSS
-import '../styles/index.css';
+import '../styles/about.css';
 
 // Importation des components
 import Header from '../components/Header';
@@ -7,15 +7,16 @@ import Banner from '../components/Banner';
 import Footer from '../components/Footer';
 
 // Importation des images
-import logoHeader from '../assets/logo.svg';
+import logoHeader from '../assets/logo.png';
 import imageBanner from '../assets/aboutbanner.png';
-import logoFooter from '../assets/logofooter.svg';
+import logoFooter from '../assets/logofooter.png';
 import Collapse from '../components/Collapse';
 
 // Importation des données
 import about from "../datas/about.json"
 
 function About() {
+
     return (
         <div>
             <div className="about-container">
@@ -26,8 +27,8 @@ function About() {
                     <Banner image={imageBanner}/>
                 </section>
                 <section className="about-main-content">
-                    {about.map(({name, content}) => (
-                        <Collapse key={content} name={name} content={[content]} />
+                    {about.map(({title, description}) => (
+                        <Collapse key={description} title={title} content={description} />
                     ))}
                 </section>
                 <Footer logo={logoFooter}/>

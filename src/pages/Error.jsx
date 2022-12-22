@@ -1,11 +1,14 @@
 import Header from '../components/Header';
 
-import logoHeader from '../assets/logo.svg';
+import '../styles/error.css';
+
+import logoHeader from '../assets/logo.png';
+
 
 function Error() {
     return (
         <div>
-        <Header logo={logoHeader}/>
+        <Header logo={logoHeader} />
             <div className="error">
                 <h1>404</h1>
                 <p>Oups! La page que vous demandez n'existe pas.</p>
