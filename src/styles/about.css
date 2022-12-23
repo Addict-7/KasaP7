@@ -1,3 +1,7 @@
+.about-container {
+    font-family: Montserrat;
+}
+
 .about-main-content {
     display: flex;
     justify-content: center;

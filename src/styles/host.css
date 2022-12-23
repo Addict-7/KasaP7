@@ -1,0 +1,22 @@
+.host-infos {
+
+}
+
+.host {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 150px;
+    margin-bottom: 24px;
+}
+
+.host-name {
+
+}
+
+.host-picture {
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+}

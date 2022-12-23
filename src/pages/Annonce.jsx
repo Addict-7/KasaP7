@@ -1,3 +1,6 @@
+// Importation du CSS
+import '../styles/annonce.css';
+
 // Importation du ' hook ' useParams pour récupérer l'id du logement selectionné
 import { redirect, useParams } from "react-router-dom";
 
@@ -5,6 +8,7 @@ import { redirect, useParams } from "react-router-dom";
 import Header from '../components/Header';
 import Slider from '../components/Slider';
 import Tags from '../components/Tags';
+import Host from '../components/Host';
 import Ratings from '../components/Ratings';
 import Collapse from "../components/Collapse";
 import Footer from '../components/Footer';
@@ -26,32 +30,26 @@ function Annonce() {
   return (
     <div>
       <Header logo={logoHeader} />
+      <Slider pictures={pictures} />
       <section className="annonce">
-        <Slider pictures={pictures} />
-          <div className="annonce-content">
-            <h1 className="annonce-title">{title}</h1>
-            <h2 className="annonce-location">{location}</h2>
-            <div className="annonce-tags">
-              <Tags tags={tags} />
-            </div>
+        <div className="annonce-content">
+          <h1 className="annonce-title">{title}</h1>
+          <h2 className="annonce-location">{location}</h2>
+          <div className="annonce-tags">
+            <Tags tags={tags} />
           </div>
-
-          <div className="host">
-                <div className="host-infos">
-                    <p className="host-name">{host.name}</p>
-                    <img className="host-img" src={host.picture} alt="" />
-                </div>
-                <div className="host-rating">
-                    <Ratings rate={rating} />
-                </div>
-            </div>
+        </div>
+        <div className="host-infos">
+          <Host host={host} />
+          <div className="host-rating">
+            <Ratings rate={rating} />
+          </div>
+        </div>
       </section>
-
       <section className="annonce-collapse">
         <Collapse type="equipement" title="Description" content={description} />
         <Collapse type="equipement" title="Equipements" content={equipments} />
       </section>
-
       <Footer logo={logoFooter}/>
     </div>
   )

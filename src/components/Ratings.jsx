@@ -2,8 +2,8 @@
 import '../styles/ratings.css';
 
 // Importation des images
-import redstar from "../assets/redStar.svg"
-import greystar from "../assets/greyStar.svg"
+import redstar from "../assets/redstar.png"
+import greystar from "../assets/greystar.png"
 
 function Rating({rating}) {
     
@@ -11,11 +11,12 @@ function Rating({rating}) {
 
     return(
         <div>
-            {numbers.map((data, index) => rating >= data ? (
-                <img key={index} src={redstar} alt="" />
-            ) : (
-                <img key={index} src={greystar} alt="" />
-            ))}
+            {numbers.map((rate, index) => rating >= rate ? ( 
+                <img key={index} src={greystar} alt='Redstar' />
+                ) : (
+                <img key={index} src={redstar} alt='Greystar' />
+                )
+            )}
         </div>
     );
 }

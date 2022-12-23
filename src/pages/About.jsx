@@ -3,7 +3,7 @@ import '../styles/about.css';
 
 // Importation des components
 import Header from '../components/Header';
-import Banner from '../components/Banner';
+import AboutBanner from '../components/AboutBanner';
 import Footer from '../components/Footer';
 
 // Importation des images
@@ -24,7 +24,7 @@ function About() {
                     <Header logo={logoHeader}/>
                 </header>
                 <section>
-                    <Banner image={imageBanner}/>
+                    <AboutBanner image={imageBanner}/>
                 </section>
                 <section className="about-main-content">
                     {about.map(({title, description}) => (

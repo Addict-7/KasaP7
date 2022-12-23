@@ -1,3 +1,6 @@
+// Importation de Link
+import { Link } from 'react-router-dom';
+
 // Importation du CSS
 import '../styles/home.css';
 
@@ -13,8 +16,7 @@ import imageBanner from '../assets/banner.png';
 import logoFooter from '../assets/logofooter.png';
 import annonces from '../datas/annonces.json';
 
-// Importation de Link
-import { Link } from 'react-router-dom';
+
 
 
 function Home() {
@@ -26,6 +28,9 @@ function Home() {
           </header>
           <section className='home-banner'>
             <Banner image={imageBanner}/>
+            <div className="banner-title">
+                <h1>Chez vous, partout et ailleurs</h1>
+            </div>
           </section>
           <section className='home-main-content'>
             {annonces.map((annonce) => {
