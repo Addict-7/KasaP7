@@ -1,7 +1,11 @@
 .home-main-content {
-    display: grid;
+    /**display: grid;
     justify-items: center;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, auto);**/
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
     grid-gap:50px;
     border-radius: 25px;
     background-color: #f7f7f7;
@@ -21,7 +25,7 @@
 }
 
 .card-content img {
-    width: 100%;
+    width: 340px;
     height: 340px;
     
     border-radius: 10px;

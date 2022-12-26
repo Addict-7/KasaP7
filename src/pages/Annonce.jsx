@@ -47,10 +47,10 @@ function Annonce() {
         </div>
       </section>
       <section className="annonce-collapse">
-        <Collapse type="equipement" title="Description" content={description} />
+        <Collapse type="description" title="Description" content={description} />
         <Collapse type="equipement" title="Equipements" content={equipments} />
       </section>
-      <Footer logo={logoFooter}/>
+      <Footer logo={logoFooter} />
     </div>
   )
 }
