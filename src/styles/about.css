@@ -12,3 +12,14 @@
     margin-right: 15%;
     margin-bottom: 150px;
 }
+
+@media (min-width: 375px ) and (max-width: 768px) {
+    
+    .about-container {
+
+    }
+
+    .about-main-content {
+
+    }
+}

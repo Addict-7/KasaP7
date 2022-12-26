@@ -18,3 +18,10 @@
     font-weight: 500;
     color: white;
 }
+
+@media (min-width: 375px ) and (max-width: 768px) {
+    
+    .footer {
+        
+    }
+}

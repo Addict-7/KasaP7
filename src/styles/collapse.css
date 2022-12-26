@@ -48,12 +48,8 @@
     display: none;
 }
 
-.annonce-collapse {
-    display: flex;
-    justify-content: space-around;
-    gap: 100px;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+
+
+@media (min-width: 375px ) and (max-width: 768px) {
+
 }

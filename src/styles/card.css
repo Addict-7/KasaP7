@@ -13,7 +13,7 @@
 
 .card-content h2 {
     position: absolute;
-    font-size: 20px;
+    font-size: 18px;
     left: 10px;
     bottom: 10px;
     color: white;
@@ -23,6 +23,7 @@
 .card-content img {
     width: 100%;
     height: 340px;
+    
     border-radius: 10px;
     position: relative;
     object-fit: cover;
@@ -33,5 +34,28 @@
     margin: 0;
     padding: 0;
 }
+
+@media (min-width: 375px ) and (max-width: 768px) {
+    
+    
+    .home-main-content {
+        grid-template-columns: repeat(1, auto);
+        background-color: white;
+        padding: 0 0 0 0;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .card-content h2 {
+        
+    }
+
+    .card-content img {
+        min-width: 320px;
+        height: 255px;
+    }
+
+}
+
 
 

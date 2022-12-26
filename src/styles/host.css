@@ -12,11 +12,27 @@
 }
 
 .host-name {
-
+    text-align: right;
 }
 
 .host-picture {
     border-radius: 50%;
     width: 64px;
     height: 64px;
+}
+
+@media (min-width: 375px ) and (max-width: 768px) {
+    .host {
+        margin-bottom: 0px;
+    }
+    
+    .host-infos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+        text-align: right;
+        margin-top: 15px;
+        margin-bottom: 16px;
+    }
 }

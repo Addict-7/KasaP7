@@ -12,9 +12,21 @@
     align-items: center;
     background-size: cover;
     background-repeat: no-repeat;
+    object-fit: cover;
     height: 223px;
     width: 100%;
     border-radius: 25px;
     filter: brightness(70%);
     z-index: 1;
+}
+
+@media (min-width: 375px ) and (max-width: 768px) {
+    
+    .banner-content {
+
+    }
+
+    .banner-bg img {
+
+    }
 }

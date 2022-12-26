@@ -28,9 +28,6 @@ function Home() {
           </header>
           <section className='home-banner'>
             <Banner image={imageBanner}/>
-            <div className="banner-title">
-                <h1>Chez vous, partout et ailleurs</h1>
-            </div>
           </section>
           <section className='home-main-content'>
             {annonces.map((annonce) => {
