@@ -8,7 +8,7 @@ import Footer from '../components/Footer';
 
 // Importation des images
 import logoHeader from '../assets/logo.png';
-import imageBanner from '../assets/aboutbanner.png';
+import imageBanner from '../assets/aboutbannerSmartphone.png';
 import logoFooter from '../assets/logofooter.png';
 import Collapse from '../components/Collapse';
 

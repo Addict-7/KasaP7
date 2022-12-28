@@ -7,7 +7,7 @@ import '../styles/collapse.css';
 // Importation de l'image
 import arrowdown from "../assets/arrowdown.png";
 
-function Collapse({ title, content }) {
+function Collapse({ title, content, id }) {
 
   const [isOpen, setIsOpen] = useState(false);
   
@@ -18,7 +18,18 @@ function Collapse({ title, content }) {
         <img className={`collapse-arrow ${isOpen ? "collapse-arrow-down" : ""}`} src={arrowdown} alt=""/>
       </div>
       <div className={isOpen ? "collapse-text" : "collapse-no-text"}>
-        {content}
+        {isOpen && typeof content === "string" && (
+          <p key={id} className="collapse-string">
+            {content}
+          </p>
+        )}
+        {isOpen && Array.isArray(content) && (
+          <ul className="equipment">
+            {content.map((item, id) => (
+                <li key={id} className="collapse-array">{item}</li>
+            ))}
+          </ul>
+        )}
       </div>
     </div>
   );

@@ -12,9 +12,9 @@ function Rating({rating}) {
     return(
         <div>
             {numbers.map((rate, index) => rating >= rate ? ( 
-                <img key={index} src={greystar} alt='Redstar' />
+                <img key={index} src={redstar} alt='Redstar' />
                 ) : (
-                <img key={index} src={redstar} alt='Greystar' />
+                <img key={index} src={greystar} alt='Greystar' />
                 )
             )}
         </div>
