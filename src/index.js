@@ -9,9 +9,6 @@ import About from './pages/About';
 import Error from "./pages/Error"
 import Annonce from './pages/Annonce';
 
-
-
-
 import  "./styles/main.css"
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

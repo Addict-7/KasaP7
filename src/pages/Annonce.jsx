@@ -1,10 +1,6 @@
 // Importation du CSS
 import '../styles/annonce.css';
-
-// Importation 
-import { useEffect } from 'react';
-
-// Importation du ' hook ' useParams pour récupérer l'id du logement selectionné
+// Importation du ' hook ' useParams pour récupérer l'id du logement selectionné et Navigate pour aller sur une page sous une condition
 import { Navigate, useParams } from "react-router-dom";
 
 // Importation des components
@@ -15,7 +11,6 @@ import Host from '../components/Host';
 import Ratings from '../components/Ratings';
 import Collapse from "../components/Collapse";
 import Footer from '../components/Footer';
-import Error from './Error';
 
 // Importation des images
 import logoHeader from '../assets/logo.png';
@@ -34,8 +29,9 @@ function Annonce() {
 
   if (!annonce) {
     return <Navigate to="/Error"/>;
-  }
-  
+  } 
+  else {
+    
     return (
       <div>
         <Header logo={logoHeader} />
@@ -63,5 +59,6 @@ function Annonce() {
       </div>
     )
   }
+}
   
   export default Annonce;
