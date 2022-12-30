@@ -35,7 +35,7 @@
 @media (min-width: 375px ) and (max-width: 768px) {
     
     .banner-bg img {
-        min-width: 300px;
+        min-width: 200px;
     }
     
     .banner-title {

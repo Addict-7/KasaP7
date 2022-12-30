@@ -1,15 +1,17 @@
+// Importation des modules
 import React from 'react';
-import {Route, Routes, BrowserRouter} from "react-router-dom"
 import ReactDOM from "react-dom/client";
+import {Route, Routes, BrowserRouter} from "react-router-dom"
 import reportWebVitals from './reportWebVitals';
 
-
+// Importation des components Pages
 import Home from './pages/Home';
 import About from './pages/About';
 import Error from "./pages/Error"
 import Annonce from './pages/Annonce';
 
-import  "./styles/main.css"
+// Importation du CSS
+import  "./styles/main.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

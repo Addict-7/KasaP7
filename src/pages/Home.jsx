@@ -1,9 +1,6 @@
 // Importation de Link
 import { Link } from 'react-router-dom';
 
-// Importation du CSS
-import '../styles/home.css';
-
 // Importation des components
 import Header from '../components/Header';
 import Banner from '../components/Banner';
@@ -16,8 +13,8 @@ import imageBanner from '../assets/banner.png';
 import logoFooter from '../assets/logofooter.png';
 import annonces from '../datas/annonces.json';
 
-
-
+// Importation du CSS
+import '../styles/home.css';
 
 function Home() {
     return (

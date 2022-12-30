@@ -2,7 +2,7 @@
 import '../styles/banner.css';
 
 // Component de la bannière de la page d'accueil
-function Banner({image}) {
+function Banner({ image }) {
     return(
         <div className="banner-content">
             <div className="banner-bg">

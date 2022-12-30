@@ -1,5 +1,6 @@
 .about-container {
     font-family: Montserrat;
+    height: 100vh;
 }
 
 .about-main-content {
@@ -10,16 +11,5 @@
     gap: 30px;
     margin-left: 15%;
     margin-right: 15%;
-    margin-bottom: 150px;
-}
-
-@media (min-width: 375px ) and (max-width: 768px) {
-    
-    .about-container {
-
-    }
-
-    .about-main-content {
-
-    }
+    margin-bottom: 80px;
 }

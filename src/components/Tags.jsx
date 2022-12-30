@@ -2,7 +2,7 @@
 import '../styles/tags.css';
 
 // Component comprenant les Tags de chaque logement
-function Tags({tags}) {
+function Tags({ tags }) {
     return (
         <ul className="tag-values">
             {tags.map((tag, index) => (

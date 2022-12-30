@@ -2,7 +2,7 @@
 import '../styles/card.css';
 
 // Component pour les cartes des logements
-function Card({title, picture}) {
+function Card({ title, picture }) {
     
     return(
         <div className="card-content">

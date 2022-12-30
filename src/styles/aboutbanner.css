@@ -6,10 +6,11 @@
     margin-right: 5%;
 }
 
-.banner-bg img {
+.banner-bg {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url('../assets/aboutbanner.png');
     background-size: cover;
     background-repeat: no-repeat;
     object-fit: cover;
@@ -20,13 +21,11 @@
     z-index: 1;
 }
 
-@media (min-width: 375px ) and (max-width: 768px) {
+
+@media (max-width: 376px) {
     
-    .banner-content {
-
+    .banner-bg {
+        background-image: url('../assets/aboutbannerSmartphone.png');
     }
-
-    .banner-bg img {
-
-    }
+    
 }

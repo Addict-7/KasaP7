@@ -1,9 +1,14 @@
+
+import { Link } from 'react-router-dom';
+
+// Importation des components
 import Header from '../components/Header';
 
-import '../styles/error.css';
-
+// Importation des images
 import logoHeader from '../assets/logo.png';
 
+// Importation du CSS
+import '../styles/error.css';
 
 function Error() {
     return (
@@ -12,7 +17,9 @@ function Error() {
             <div className="error">
                 <h1>404</h1>
                 <p>Oups! La page que vous demandez n'existe pas.</p>
-                <a href="/">Retourner sur la page d'accueil</a>
+                <Link to={"/"}>
+                    <span>Retourner sur la page d’accueil</span>
+                </Link>
             </div>
         </div>
     )

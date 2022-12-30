@@ -14,10 +14,6 @@
     cursor: pointer;
 }
 
-.collapse-cont-down {
-    
-}
-
 .collapse-title {
     font-size: 18px;
     margin-left: 5%;
@@ -47,8 +43,6 @@
 .collapse-no-text {
     display: none;
 }
-
-
 
 @media (min-width: 375px ) and (max-width: 768px) {
 

@@ -44,17 +44,15 @@
 @media (min-width: 375px ) and (max-width: 768px) {
     
     .left-slider-arrow {
-        
         width: 20px;
         height: 30px;
     }
 
     .right-slider-arrow {
-        
         width: 20px;
         height: 30px;
     }
-    
+
     .slider-img {
         height: 255px;
     }
@@ -62,4 +60,5 @@
     .slider p {
         display: none;
     }
+    
 }

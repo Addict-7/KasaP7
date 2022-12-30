@@ -2,7 +2,7 @@
 import '../styles/footer.css';
 
 // Component pour le footer comprenant la date, le logo et le message sur les droits de Kasa.
-function Footer({logo}) {
+function Footer({ logo }) {
   
   return (
     <div className="footer">

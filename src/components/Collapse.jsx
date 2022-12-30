@@ -1,12 +1,13 @@
 // Importation du hook useState
 import { useState } from "react";
 
-// Importation du CSS
-import '../styles/collapse.css';
-
 // Importation de l'image
 import arrowdown from "../assets/arrowdown.png";
 
+// Importation du CSS
+import '../styles/collapse.css';
+
+// Component pour les Collapses
 function Collapse({ title, content, id }) {
 
   const [isOpen, setIsOpen] = useState(false);
