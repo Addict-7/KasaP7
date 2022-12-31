@@ -1,9 +1,12 @@
+.error-content {
+    font-family: Montserrat;
+}
+
 .error {
     display: flex;
     flex-direction: column;
     text-align: center;
     margin-top: 50px;
-    font-family: Montserrat;
 }
 
 .error h1 {

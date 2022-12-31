@@ -12,7 +12,7 @@ import '../styles/error.css';
 
 function Error() {
     return (
-        <div>
+        <div className="error-content">
         <Header logo={logoHeader} />
             <div className="error">
                 <h1>404</h1>
